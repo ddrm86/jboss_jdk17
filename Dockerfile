@@ -1,5 +1,5 @@
 FROM jboss/base:latest
-MAINTAINER Marek Goldmann <mgoldman@redhat.com>
+MAINTAINER David del Río Medina <ddrm86@gmail.com>
 
 # User root user to install software
 USER root
