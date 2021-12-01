@@ -4,8 +4,11 @@ MAINTAINER David del Río Medina <ddrm86@gmail.com>
 # User root user to install software
 USER root
 
+# Install EPEL repository
+RUN yum -y install epel-release && yum update
+
 # Install necessary packages
-RUN yum -y install java-11-openjdk-devel && yum clean all
+RUN yum -y install java-17-openjdk-devel && yum clean all
 
 # Switch back to jboss user
 USER jboss
