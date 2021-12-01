@@ -5,7 +5,7 @@ MAINTAINER David del Río Medina <ddrm86@gmail.com>
 USER root
 
 # Install EPEL repository
-RUN yum -y install epel-release && yum update
+RUN yum -y install epel-release
 
 # Install necessary packages
 RUN yum -y install java-17-openjdk-devel && yum clean all
